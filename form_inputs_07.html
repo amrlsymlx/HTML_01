@@ -2,77 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Inputs</title>
+    <title>form inputs</title>
 </head>
 <body>
     <form action="process.php">
         <!-- text -->
         <div>
-            <label for="username">Username :</label>
+            <label for="username">UserName:</label>
             <input type="text" name="username" id="username" placeholder="Enter your username">
-
         </div>
         <br>
-        <!-- email -->
+        <!-- Email -->
         <div>
-            <label for="Email">Email :</label>
+            <label for="email">Email:</label>
             <input type="email" name="email" id="email" placeholder="Enter your email">
         </div>
         <br>
-        <!-- Feedback -->
+        <!-- Text area -->
         <div>
-            <label for="feedback">Feeback</label>
-            <br>
+            <label for="feedback">Feedback:</label>
             <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
         </div>
         <br>
         <!-- Number -->
         <div>
-            <label for="age">Age :</label>
+            <label for="age">Age:</label>
             <input type="number">
         </div>
         <br>
-        <!-- dropdown -->
-        <div>
-            <label for="gender">Gender :</label>
-            <select name="gender" id="gender">
-                <option value="male">Male</option>
-                <option value="female" selected>Female</option>
-                <option value="others">Others</option>
-            </select>
-        </div>
+        <!-- select (dropdown) -->
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female" selected>Female</option>
+            <option value="others">Others</option>
+        </select>
         <br>
-        <!-- Date (Calendar) -->
+        <br>
+        <!-- Date (calendar) -->
         <div>
-            <label for="dob">Date of birth :</label>
+            <label for="dob">Date of birth</label>
             <input type="date" id="dob" name="dob">
         </div>
-        <br>
-        <!-- Radio button -->
+        <!-- Radi button -->
         <div>
-            <label for="color">Color :</label>
+            <label for="color">Color:</label>
             <input type="radio" id="color" name="color" value="silver">Silver
             <input type="radio" id="color" name="color" value="gold">Gold
             <input type="radio" id="color" name="color" value="green">Green
         </div>
         <br>
-        <!-- Check box -->
+        <!-- check box -->
         <div>
-            <label for="meals">Meals :</label>
-            <input type="checkbox" name="meal" id="meal" value="soft drinks">Softdrink
-            <input type="checkbox" name="meal" id="meal" value="salas">Salad
-            <input type="checkbox" name="meal" id="meal" value="Chicken">Chicken
+            <label for="meals">Meals:</label>
+            <input type="checkbox" name="meal" id="meal" value="soft drinks">Soft drink
+            <input type="checkbox" name="meal" id="meal" value="salad">Salad
+            <input type="checkbox" name="meal" id="meal" value="chicken">Chiken
         </div>
         <br>
-        <!-- submit -->
-        <div>
-            <input type="submit" value="submit">
-            <button type="submit">Submit</button>
-        </div>
-        <br>
-    
+        <!-- Submit -->
+        <input type="submit" value="submit">
+        <!-- <button type="submit">Submit</button> -->
     </form>
 </body>
 </html>
